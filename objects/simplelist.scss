@@ -1,0 +1,23 @@
+//
+//  Simple list abstract item
+//
+
+.o-simplelist {
+  position: relative;
+  display: block;
+  list-style-type: none;
+
+  &--scrollable {
+    overflow: auto;
+    // assume item height of $baseline-grid, show 8.5 items so that the last item is half visible
+    // to suggest scrolling (blame mac disappearing scrollbar via settigs!)
+    max-height: floor($baseline-grid*8.5);
+  }
+
+
+  &__item {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+}

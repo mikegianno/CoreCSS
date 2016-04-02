@@ -1,0 +1,119 @@
+//
+//
+//  Element spacing utilities
+//  ------------------------------------
+//
+//  1. Define number of iterations
+//  2. Margins
+//  3. Paddings
+//
+
+
+
+// 1.Define number of iterations
+$spacings-count: 10;
+
+
+
+// 2.Margins
+
+.u-marginTop-none { margin-top: none !important; }
+.u-marginBottom-none { margin-bottom: none !important; }
+.u-marginVertical-none {
+  margin-top: none !important;
+  margin-bottom: none !important;
+}
+
+.u-marginLeft-none { margin-left: none !important; }
+.u-marginRight-none { margin-right: none !important; }
+.u-marginHorizontal-none {
+  margin-left: none !important;
+  margin-right: none !important;
+}
+.u-margin-none { margin: none !important; }
+
+.u-marginTop-0.5x { margin-top: $baseline-grid*0.5 !important; }
+.u-marginBottom-0.5x { margin-bottom: $baseline-grid*0.5 !important; }
+.u-marginVertical-0.5x {
+  margin-top: $baseline-grid*0.5 !important;
+  margin-bottom: $baseline-grid*0.5 !important;
+}
+
+.u-marginLeft-0.5x { margin-left: $baseline-grid*0.5 !important; }
+.u-marginRight-0.5x { margin-right: $baseline-grid*0.5 !important; }
+.u-marginHorizontal-0.5x {
+  margin-left: $baseline-grid*0.5 !important;
+  margin-right: $baseline-grid*0.5 !important;
+}
+.u-margin-0.5x { margin: $baseline-grid*0.5 !important; }
+
+@for $i from 1 to $spacings-count+1
+{
+.u-marginTop-#{$i}x { margin-top: $baseline-grid*$i !important; }
+.u-marginBottom-#{$i}x { margin-bottom: $baseline-grid*$i !important; }
+.u-marginVertical-#{$i}x {
+  margin-top: $baseline-grid*$i !important;
+  margin-bottom: $baseline-grid*$i !important;
+}
+
+.u-marginLeft-#{$i}x { margin-left: $baseline-grid*$i !important; }
+.u-marginRight-#{$i}x { margin-right: $baseline-grid*$i !important; }
+.u-marginHorizontal-#{$i}x {
+  margin-left: $baseline-grid*$i !important;
+  margin-right: $baseline-grid*$i !important;
+}
+.u-margin-#{$i}x { padding: $baseline-grid*$i !important; }
+}
+
+
+
+// 3.Paddings
+
+.u-paddingTop-none { padding-top: none !important; }
+.u-paddingBottom-none { padding-bottom: none !important; }
+.u-paddingVertical-none {
+  padding-top: none !important;
+  padding-bottom: none !important;
+}
+
+.u-paddingLeft-none { padding-left: none !important; }
+.u-paddingRight-none { padding-right: none !important; }
+.u-paddingHorizontal-none {
+  padding-left: none !important;
+  padding-right: none !important;
+}
+.u-padding-none { padding: none !important; }
+
+.u-paddingTop-0.5x { padding-top: $baseline-grid*0.5 !important; }
+.u-paddingBottom-0.5x { padding-bottom: $baseline-grid*0.5 !important; }
+.u-paddingVertical-0.5x {
+  padding-top: $baseline-grid*0.5 !important;
+  padding-bottom: $baseline-grid*0.5 !important;
+}
+
+.u-paddingLeft-0.5x { padding-left: $baseline-grid*0.5 !important; }
+.u-paddingRight-0.5x { padding-right: $baseline-grid*0.5 !important; }
+.u-paddingHorizontal-0.5x {
+  padding-left: $baseline-grid*0.5 !important;
+  padding-right: $baseline-grid*0.5 !important;
+}
+.u-padding-0.5x { padding: $baseline-grid*0.5 !important; }
+
+
+@for $i from 1 to $spacings-count+1
+{
+.u-paddingTop-#{$i}x { padding-top: $baseline-grid*$i !important; }
+.u-paddingBottom-#{$i}x { padding-bottom: $baseline-grid*$i !important; }
+.u-paddingVertical-#{$i}x {
+  padding-top: $baseline-grid*$i !important;
+  padding-bottom: $baseline-grid*$i !important;
+}
+
+.u-paddingLeft-#{$i}x { padding-left: $baseline-grid*$i !important; }
+.u-paddingRight-#{$i}x { padding-right: $baseline-grid*$i !important; }
+.u-paddingHorizontal-#{$i}x {
+  padding-left: $baseline-grid*$i !important;
+  padding-right: $baseline-grid*$i !important;
+}
+.u-padding-#{$i}x { padding: $baseline-grid*$i !important; }
+}

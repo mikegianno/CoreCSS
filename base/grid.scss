@@ -1,0 +1,71 @@
+//
+//  Minimal grid, consider updating to your own
+
+.grid {
+
+  &-1x8 {
+    position: relative;
+    float: left;
+    width: 12.5%;
+    height: 100%;
+  }
+
+  &-2x8 {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 100%;
+  }
+
+  &-3x8 {
+    position: relative;
+    float: left;
+    width: 37.5%;
+    height: 100%;
+  }
+
+  &-4x8 {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+
+  &-5x8 {
+    position: relative;
+    float: left;
+    width: 72.5%;
+    height: 100%;
+  }
+
+  &-6x8 {
+    position: relative;
+    float: left;
+    width: 75%;
+    height: 100%;
+  }
+
+  &-7x8 {
+    position: relative;
+    float: left;
+    width: 87.5%;
+    height: 100%;
+  }
+
+  &-8x8 {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    clear: both;
+  }
+
+
+  &__clear {
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+}

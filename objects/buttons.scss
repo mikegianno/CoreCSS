@@ -1,0 +1,74 @@
+//
+//  Abstract button object
+//
+
+.o-button {
+
+  $button-color: $secondary-action-color;
+  $focus-button-color: lighten( $button-color, $focus-percentage-color-change );
+  $clicked-button-color: lighten( $button-color, $active-percentage-color-change );
+
+  $cta-button-color: $primary-action-color;
+  $cta-button-text-color: $primary-action-text;
+  $focus-cta-button-color: lighten( $cta-button-color, $focus-percentage-color-change );
+  $clicked-cta-button-color: lighten( $cta-button-color, $active-percentage-color-change );
+
+  $disabled-button-color: $muted-color;
+
+  @mixin button-disabled() {
+    @include interactive-element();
+    border: 1px solid $disabled-button-color;
+    color: $disabled-button-color;
+    background-color: transparent;
+  }
+
+  &-default {
+    @include interactive-element();
+    @include block-item();
+    border: 1px solid $button-color;
+    color: $button-color;
+
+    &[disabled],
+    &.is-disabled {
+      @include button-disabled();
+    }
+
+    &:focus,
+    &.is-focus {
+      border-color: $focus-border-color;
+      outline: 1px dotted $muted-color;
+    }
+
+    &:active,
+    &.is-active {
+      border-color: $clicked-button-color;
+      color: $clicked-button-color;
+      background-color: rgba( $clicked-button-color, $low-transparent-percentage );
+    }
+  }
+
+  &-cta {
+    @include interactive-element();
+    @include block-item();
+    color: $cta-button-text-color;
+    background-color: $cta-button-color;
+
+    &[disabled],
+    &.is-disabled {
+      @include button-disabled();
+    }
+
+    &:focus,
+    &.is-focus {
+      background-color: $focus-cta-border-color;
+      outline: 1px dotted $muted-color;
+    }
+
+    &:active,
+    &.is-active {
+      background-color: $clicked-cta-button-color;
+    }
+
+  }
+
+}

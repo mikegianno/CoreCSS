@@ -1,0 +1,37 @@
+//
+//  Typography extensions, please consider re-setting any core value that you use
+//  Reset font sizes as you please
+//
+
+
+@import 'core/typography';
+
+
+// Font families used
+$font-family: $CORE-font-family;
+
+$system-font-family: $CORE-system-font-family;
+
+// Baseline grid
+$baseline-grid: $CORE-baseline-grid;
+
+
+// Font sizes and line heights per font size
+
+$default-font-size: $CORE-default-font-size;
+$default-line-height: $baseline-grid;
+
+$small-font-size: round( $default-font-size*0.8 );
+$small-line-height: $baseline-grid;
+
+$tiny-font-size: round( $default-font-size*0.6 );
+$default-line-height: $baseline-grid*0.5;
+
+$big-font-size: round( $default-font-size*1.4 );
+$big-line-height: $baseline-grid*1.5;
+
+$large-font-size: $default-font-size*2;
+$large-line-height: $baseline-grid*2;
+
+$enormous-font-size: $default-font-size*3;
+$enormous-line-height: $baseline-grid*3;

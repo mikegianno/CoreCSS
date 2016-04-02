@@ -1,0 +1,14 @@
+//
+//  Content container object abstract definition
+//
+
+.o-content {
+  position: relative;
+  display: block;
+  @include clearfix();
+
+  &__container {
+    @include container-element();
+  }
+
+}

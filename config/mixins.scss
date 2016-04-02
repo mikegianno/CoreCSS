@@ -1,0 +1,49 @@
+//
+//  Zindexes extension placeholder
+//
+
+
+@import 'core/mixins';
+
+
+@mixin clearfix() {
+  &:after {
+    content: '';
+    display: table;
+
+  }
+}
+
+@mixin padding-set($multiplier) {
+  .u-paddingTop-#{$multiplier}x { padding-top: $baseline-grid*$multiplier !important; }
+  .u-paddingBottom-#{$multiplier}x { padding-bottom: $baseline-grid*$multiplier !important; }
+  .u-paddingVertical-#{$multiplier}x {
+    padding-top: $baseline-grid*$multiplier !important;
+    padding-bottom: $baseline-grid*$multiplier !important;
+  }
+
+  .u-paddingLeft-#{$multiplier}x { padding-left: $baseline-grid*$multiplier !important; }
+  .u-paddingRight-#{$multiplier}x { padding-right: $baseline-grid*$multiplier !important; }
+  .u-paddingHorizontal-#{$multiplier}x {
+    padding-left: $baseline-grid*$multiplier !important;
+    padding-right: $baseline-grid*$multiplier !important;
+  }
+  .u-padding-#{$multiplier}x { padding: $baseline-grid*$multiplier !important; }
+}
+
+@mixin margin-set($multiplier) {
+  .u-marginTop-#{$multiplier}x { margin-top: $baseline-grid*$multiplier !important; }
+  .u-marginBottom-#{$multiplier}x { margin-bottom: $baseline-grid*$multiplier !important; }
+  .u-marginVertical-#{$multiplier}x {
+    margin-top: $baseline-grid*$multiplier !important;
+    margin-bottom: $baseline-grid*$multiplier !important;
+  }
+
+  .u-marginLeft-#{$multiplier}x { margin-left: $baseline-grid*$multiplier !important; }
+  .u-marginRight-#{$multiplier}x { margin-right: $baseline-grid*$multiplier !important; }
+  .u-marginHorizontal-#{$multiplier}x {
+    margin-left: $baseline-grid*$multiplier !important;
+    margin-right: $baseline-grid*$multiplier !important;
+  }
+  .u-margin-#{$multiplier}x { margin: $baseline-grid*$multiplier !important; }
+}

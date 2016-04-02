@@ -1,0 +1,50 @@
+//
+//  Extended colors set, please consider re-setting any core values.
+//  Ideally the application should not use any core variables directly.
+//
+//  Change whatever you wish in here!
+//  Suggest that you triple check if you add an actual HEX value, it might mean
+//  that you'd better start thinking of adding to the core/colors.scss
+
+@import 'core/colors';
+
+
+// Background variables
+$background-color: $CORE-background-color;
+
+
+// Fonts coloring
+
+$font-color: $CORE-font-color;
+
+$primary-action-text: #fff;
+
+$muted-text-color: lighten( $font-color, 45% );
+$disabled-text-color: lighten( $font-color, 75% );
+
+
+// Elements coloring
+
+// Primary action colors
+$primary-action-color: $primary-element-color;
+
+// Secondary action colors
+$secondary-action-color: $active-element-color;
+
+$error-element-color: $CORE-error-element-color;
+$warning-element-color: $CORE-warning-element-color;
+$info-element-color: $CORE-info-element-color;
+
+
+// Muted element color
+
+$muted-color: darken( $background-color, 10% );
+
+
+// Helper colors
+
+$separator-color: darken( $CORE-background-color, 10% );
+
+$border-color: darken( $CORE-background-color, 50% );
+
+$focus-border-color: darken( $CORE-background-color, 50% + $active-percentage-color-change );

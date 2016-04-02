@@ -1,0 +1,29 @@
+//
+//  Generic usage variables...you'll see below :)
+//
+//  Contents
+//  --------------------------------------------
+//
+//  1. Interactive element percentages
+//  2.Transparencies percentages
+//
+
+
+
+// 1. Interactive element percentages
+
+// For any element that gets a focus
+$focus-percentage-color-change: 5%;
+
+// Clicked buttons
+$active-percentage-color-change: 10%;
+
+
+
+// 2. Transparencies percentages
+
+$low-transparent-percentage: 0.85;
+
+$mid-transparent-percentage: 0.6;
+
+$high-transparent-percentage: 0.1;

@@ -1,0 +1,32 @@
+//
+// Text input object
+//
+
+.o-input-text {
+  @include interactive-element();
+  @include block-item();
+  color: $font-color;
+  border: 1px solid $border-color;
+  background-color: $background-color;
+
+  &:focus,
+  &.is-focus {
+    border-color: $focus-border-color;
+    outline: 1px dotted $muted-color;
+  }
+
+  &[disabled],
+  &.is-disabled {
+    border-color: $muted-color;
+    color: $muted-text-color;
+  }
+
+  &:hover,
+  &.is-hover {
+    border-color: lighten( $focus-border-color, $focus-percentage-color-change );
+
+    &:focus {
+      border-color: lighten( $focus-border-color, $focus-percentage-color-change );
+    }
+  }
+}

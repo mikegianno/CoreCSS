@@ -1,0 +1,43 @@
+//
+// Set default header object
+//
+
+.o-header {
+
+  &-heading1 {
+    font-size: $enormous-font-size*;
+    line-height: $enormous-line-height;
+    font-weight: normal;
+  }
+
+  &-heading2 {
+    font-size: $large-font-size;
+    line-height: $large-line-height;
+    font-weight: bold;
+  }
+
+  &-heading3 {
+    font-size: $large-font-size;
+    line-height: $large-line-height;
+    font-weight: normal;
+  }
+
+  &-heading4 {
+    font-size: $big-font-size;
+    line-height: $big-line-height;
+    font-weight: bold;
+  }
+
+  &-heading5 {
+    font-size: $big-font-size;
+    line-height: $big-line-height;
+    font-weight: normal;
+  }
+
+  &-heading6 {
+    font-size: $default-font-size;
+    line-height: $default-line-height;
+    font-weight: bold;
+  }
+
+}

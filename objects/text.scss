@@ -1,0 +1,37 @@
+//
+// Set default text object
+//
+
+.o-text {
+
+  &-tiny {
+    font-size: $tiny-font-size;
+    line-height: $tiny-line-height;
+  }
+
+  &-small {
+    font-size: $small-font-size;
+    line-height: $small-line-height;
+  }
+
+  &-default {
+    font-size: $default-font-size;
+    line-height: $default-line-height;
+  }
+
+  &-big {
+    font-size: $big-font-size;
+    line-height: $big-line-height;
+  }
+
+  &-large {
+    font-size: $large-font-size;
+    line-height: $large-line-height;
+  }
+
+  &-enormous {
+    font-size: $enormous-font-size;
+    line-height: $enormous-line-height;
+  }
+
+}

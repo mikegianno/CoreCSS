@@ -1,0 +1,123 @@
+//
+//  All coloring utilities
+//
+//  Contents
+//  -----------------------------------
+//
+//  1. Background color
+//    1.1 Background transparent colors
+//  2. Text colors
+//  3. Border colors
+
+
+
+// 1. Background colors
+
+.u-backgroundColor-default { background-color: $background-color; }
+.u-backgroundColor-cta     { background-color: $primary-action-color; }
+.u-backgroundColor-active  { background-color: $secondary-action-color; }
+.u-backgroundColor-muted   { background-color: $muted-color; }
+.u-backgroundColor-error   { background-color: $error-element-color; }
+.u-backgroundColor-warning { background-color: $warning-element-color; }
+.u-backgroundColor-info    { background-color: $info-element-color; }
+
+// 1.1 Background transparent colors
+
+.u-backgroundColor-lowtransparent-default {
+  background-color: rgba( $background-color, $low-transparent-percentage );
+}
+.u-backgroundColor-midtransparent-default {
+  background-color: rgba( $background-color, $mid-transparent-percentage );
+}
+.u-backgroundColor-hightransparent-default{
+  background-color: rgba( $background-color, $high-transparent-percentage );
+}
+
+.u-backgroundColor-lowtransparent-cta {
+  background-color: rgba( $primary-action-color, $low-transparent-percentage );
+}
+.u-backgroundColor-midtransparent-cta {
+  background-color: rgba( $primary-action-color, $mid-transparent-percentage );
+}
+.u-backgroundColor-hightransparent-cta{
+  background-color: rgba( $primary-action-color, $high-transparent-percentage );
+}
+
+.u-backgroundColor-lowtransparent-active {
+  background-color: rgba( $secondary-action-color, $low-transparent-percentage );
+}
+.u-backgroundColor-midtransparent-active {
+  background-color: rgba( $secondary-action-color, $mid-transparent-percentage );
+}
+.u-backgroundColor-hightransparent-active{
+  background-color: rgba( $secondary-action-color, $high-transparent-percentage );
+}
+
+.u-backgroundColor-lowtransparent-muted {
+  background-color: rgba( $muted-color, $low-transparent-percentage );
+}
+.u-backgroundColor-midtransparent-muted {
+  background-color: rgba( $muted-color, $mid-transparent-percentage );
+}
+.u-backgroundColor-hightransparent-muted{
+  background-color: rgba( $muted-color, $high-transparent-percentage );
+}
+
+.u-backgroundColor-lowtransparent-error {
+  background-color: rgba( $error-element-color, $low-transparent-percentage );
+}
+.u-backgroundColor-midtransparent-error {
+  background-color: rgba( $error-element-color, $mid-transparent-percentage );
+}
+.u-backgroundColor-hightransparent-error{
+  background-color: rgba( $error-element-color, $high-transparent-percentage );
+}
+
+.u-backgroundColor-lowtransparent-warning {
+  background-color: rgba( $warning-element-color, $low-transparent-percentage );
+}
+.u-backgroundColor-midtransparent-warning {
+  background-color: rgba( $warning-element-color, $mid-transparent-percentage );
+}
+.u-backgroundColor-hightransparent-warning{
+  background-color: rgba( $warning-element-color, $high-transparent-percentage );
+}
+
+.u-backgroundColor-lowtransparent-info {
+  background-color: rgba( $info-element-color, $low-transparent-percentage );
+}
+.u-backgroundColor-midtransparent-info {
+  background-color: rgba( $info-element-color, $mid-transparent-percentage );
+}
+.u-backgroundColor-hightransparent-info{
+  background-color: rgba( $info-element-color, $high-transparent-percentage );
+}
+
+
+
+
+// 2. Text colors
+
+.u-color-default { color: $font-color; }
+.u-color-cta     { color: $primary-action-color; }
+.u-color-cta-text{ color: $primary-action-text; }
+.u-color-active  { color: $secondary-action-color; }
+.u-color-muted   { color: $muted-text-color; }
+.u-color-disabled{ color: $disabled-text-color; }
+.u-color-error   { color: $error-element-color; }
+.u-color-warning { color: $warning-element-color; }
+.u-color-info    { color: $info-element-color; }
+
+
+
+// 3. Border colors
+
+.u-borderColor-default { border-color: $font-color; }
+.u-borderColor-cta     { border-color: $primary-action-color; }
+.u-borderColor-cta-text{ border-color: $primary-action-text; }
+.u-borderColor-active  { border-color: $secondary-action-color; }
+.u-borderColor-muted   { border-color: $muted-text-color; }
+.u-borderColor-disabled{ border-color: $disabled-text-color; }
+.u-borderColor-error   { border-color: $error-element-color; }
+.u-borderColor-warning { border-color: $warning-element-color; }
+.u-borderColor-info    { border-color: $info-element-color; }

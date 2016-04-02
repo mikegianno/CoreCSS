@@ -1,0 +1,29 @@
+//
+//  Block mixins used on objects and inherited in components used.
+//  Each mixin has a set of suggested elements usage
+//
+
+
+// interactive-element should be used in text-inputs, buttons, custom dropdown containers etc.
+@mixin interactive-element($border-width: 0) {
+  height: $baseline-grid;
+  line-height: $baseline-grid*1 - $border-width*2;
+  font-size: $default-font-size;
+  padding-left: $baseline-grid*0.5;
+  padding-right: $baseline-grid*0.5;
+}
+
+// container-element should be used in blocks containing text, widget containers etc.
+@mixin container-element($border-width: 0) {
+  padding-top: $baseline-grid;
+  padding-bottom: $baseline-grid;
+  padding-left: $baseline-grid;
+  padding-right: $baseline-grid;
+}
+
+// block-item should be used in items like buttons, containers, widgets to set rounding styling
+@mixin block-item($border-radius: 1px) {
+  border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+}
