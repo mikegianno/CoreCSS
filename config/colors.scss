@@ -26,10 +26,10 @@ $disabled-text-color: lighten( $font-color, 75% );
 // Elements coloring
 
 // Primary action colors
-$primary-action-color: $primary-element-color;
+$primary-action-color: $CORE-primary-element-color;
 
 // Secondary action colors
-$secondary-action-color: $active-element-color;
+$secondary-action-color: $CORE-active-element-color;
 
 $error-element-color: $CORE-error-element-color;
 $warning-element-color: $CORE-warning-element-color;

@@ -1,0 +1,44 @@
+//
+//
+// Border utilities
+// ------------------------------------
+//
+// Properties that are dealing with
+// border only
+//
+//
+//  Contents
+//
+//  1. Border widths
+//  2. Border Radius
+//
+
+
+
+// 1. Border widths
+
+$border-variations: 3;
+
+@for $i from 1 to $border-variations+1 {
+.u-borderTopWidth-#{$i}   { border-top-width: $i*1px; }
+.u-borderBottomWidth-#{$i}{ border-bottom-width: $i*1px; }
+
+.u-borderLeftWidth-#{$i}  { border-left-width: $i*1px; }
+.u-borderRightWidth-#{$i} { border-right-width: $i*1px; }
+
+.u-borderWidth-#{$i}      { border-width: $i*1px; }
+
+}
+
+
+//  2. Border Radius
+
+.u-borderRadius-default { @include border-radius( $default-element-radius ); }
+.u-borderTopRadius-default {
+  @include border-radius( $default-element-radius $default-element-radius 0 0 );
+}
+.u-borderBottomRadius-default {
+  @include border-radius( 0 0 $default-element-radius $default-element-radius );
+}
+
+.u-borderRadius-round   { @include border-radius( 50% ); }

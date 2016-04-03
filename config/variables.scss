@@ -4,3 +4,8 @@
 
 
 @import 'core/variables';
+
+
+// use this to compute various multiples of baseline-grid
+// in utilities, example u-paddingTop-1x to u-paddingTop-<multiples>x
+$baseline-grid-multiples: 10;

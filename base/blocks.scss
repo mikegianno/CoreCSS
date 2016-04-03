@@ -22,8 +22,6 @@
 }
 
 // block-item should be used in items like buttons, containers, widgets to set rounding styling
-@mixin block-item($border-radius: 1px) {
-  border-radius: $border-radius;
-  -moz-border-radius: $border-radius;
-  -webkit-border-radius: $border-radius;
+@mixin block-item($border-radius: $default-element-radius ) {
+  @include border-radius( $border-radius );
 }

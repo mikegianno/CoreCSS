@@ -11,7 +11,7 @@
 
 
 // 1.Define number of iterations
-$spacings-count: 10;
+$spacings-count: $baseline-grid-multiples;
 
 
 
@@ -32,20 +32,24 @@ $spacings-count: 10;
 }
 .u-margin-none { margin: none !important; }
 
-.u-marginTop-0.5x { margin-top: $baseline-grid*0.5 !important; }
-.u-marginBottom-0.5x { margin-bottom: $baseline-grid*0.5 !important; }
-.u-marginVertical-0.5x {
+.u-marginLeft-auto  { margin-left: auto !important; }
+.u-marginRight-auto { margin-right: auto !important; }
+.u-marginHorizontal-auto { margin-left: auto !important; margin-right: auto !important; }
+
+.u-marginTop-0_5x { margin-top: $baseline-grid*0.5 !important; }
+.u-marginBottom-0_5x { margin-bottom: $baseline-grid*0.5 !important; }
+.u-marginVertical-0_5x {
   margin-top: $baseline-grid*0.5 !important;
   margin-bottom: $baseline-grid*0.5 !important;
 }
 
-.u-marginLeft-0.5x { margin-left: $baseline-grid*0.5 !important; }
-.u-marginRight-0.5x { margin-right: $baseline-grid*0.5 !important; }
-.u-marginHorizontal-0.5x {
+.u-marginLeft-0_5x { margin-left: $baseline-grid*0.5 !important; }
+.u-marginRight-0_5x { margin-right: $baseline-grid*0.5 !important; }
+.u-marginHorizontal-0_5x {
   margin-left: $baseline-grid*0.5 !important;
   margin-right: $baseline-grid*0.5 !important;
 }
-.u-margin-0.5x { margin: $baseline-grid*0.5 !important; }
+.u-margin-0_5x { margin: $baseline-grid*0.5 !important; }
 
 @for $i from 1 to $spacings-count+1
 {
@@ -84,20 +88,20 @@ $spacings-count: 10;
 }
 .u-padding-none { padding: none !important; }
 
-.u-paddingTop-0.5x { padding-top: $baseline-grid*0.5 !important; }
-.u-paddingBottom-0.5x { padding-bottom: $baseline-grid*0.5 !important; }
-.u-paddingVertical-0.5x {
+.u-paddingTop-0_5x { padding-top: $baseline-grid*0.5 !important; }
+.u-paddingBottom-0_5x { padding-bottom: $baseline-grid*0.5 !important; }
+.u-paddingVertical-0_5x {
   padding-top: $baseline-grid*0.5 !important;
   padding-bottom: $baseline-grid*0.5 !important;
 }
 
-.u-paddingLeft-0.5x { padding-left: $baseline-grid*0.5 !important; }
-.u-paddingRight-0.5x { padding-right: $baseline-grid*0.5 !important; }
-.u-paddingHorizontal-0.5x {
+.u-paddingLeft-0_5x { padding-left: $baseline-grid*0.5 !important; }
+.u-paddingRight-0_5x { padding-right: $baseline-grid*0.5 !important; }
+.u-paddingHorizontal-0_5x {
   padding-left: $baseline-grid*0.5 !important;
   padding-right: $baseline-grid*0.5 !important;
 }
-.u-padding-0.5x { padding: $baseline-grid*0.5 !important; }
+.u-padding-0_5x { padding: $baseline-grid*0.5 !important; }
 
 
 @for $i from 1 to $spacings-count+1

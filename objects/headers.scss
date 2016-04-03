@@ -5,39 +5,39 @@
 .o-header {
 
   &-heading1 {
-    font-size: $enormous-font-size*;
+    font-size: $enormous-font-size;
     line-height: $enormous-line-height;
-    font-weight: normal;
+    font-weight: $font-weight-default;
   }
 
   &-heading2 {
     font-size: $large-font-size;
     line-height: $large-line-height;
-    font-weight: bold;
+    font-weight: $font-weight-important;
   }
 
   &-heading3 {
     font-size: $large-font-size;
     line-height: $large-line-height;
-    font-weight: normal;
+    font-weight: $font-weight-default;
   }
 
   &-heading4 {
     font-size: $big-font-size;
     line-height: $big-line-height;
-    font-weight: bold;
+    font-weight: $font-weight-important;
   }
 
   &-heading5 {
     font-size: $big-font-size;
     line-height: $big-line-height;
-    font-weight: normal;
+    font-weight: $font-weight-default;
   }
 
   &-heading6 {
     font-size: $default-font-size;
     line-height: $default-line-height;
-    font-weight: bold;
+    font-weight: $font-weight-important;
   }
 
 }

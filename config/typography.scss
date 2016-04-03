@@ -25,7 +25,7 @@ $small-font-size: round( $default-font-size*0.8 );
 $small-line-height: $baseline-grid;
 
 $tiny-font-size: round( $default-font-size*0.6 );
-$default-line-height: $baseline-grid*0.5;
+$tiny-line-height: $baseline-grid*0.5;
 
 $big-font-size: round( $default-font-size*1.4 );
 $big-line-height: $baseline-grid*1.5;
@@ -35,3 +35,12 @@ $large-line-height: $baseline-grid*2;
 
 $enormous-font-size: $default-font-size*3;
 $enormous-line-height: $baseline-grid*3;
+
+
+// Font weights
+
+$font-weight-default: $CORE-font-weight-normal;
+
+$font-weight-thin: $CORE-font-weight-thin;
+
+$font-weight-important: $CORE-font-weight-bold;

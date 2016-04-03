@@ -1,0 +1,83 @@
+//
+//
+// Fonts and texts utilities
+// ------------------------------------
+//
+// Properties that are dealing with
+// font and text only
+//
+//
+//  Contents
+//  1. Text block
+//  2. Text alignment
+//  3. Font weights
+//  4. Font styles
+//  5. Font sizes
+//  6. Line height
+//  7. Vertical Align
+//
+//
+
+
+
+// 1. Text block
+
+.u-whitespace-pre { white-space: pre; }
+
+
+
+// 2. Text alignment
+
+.u-textAlign-left { text-align: left; }
+
+.u-textAlign-right { text-align: right; }
+
+.u-textAlign-center { text-align: center; }
+
+
+
+// 3. Font weights
+
+.u-fontWeight-thin    { font-weight: $font-weight-thin; }
+.u-fontWeight-normal  { font-weight: $font-weight-default; }
+.u-fontWeight-bold    { font-weight: $font-weight-important; }
+
+
+
+// 4. Text decoration
+.u-textDecoration-linethrough     { text-decoration: line-through; }
+.u-textDecoration-underline { text-decoration: underline; }
+
+
+
+// 5. Font sizes
+
+.u-fontSize-tiny          { font-size: $tiny-font-size; }
+.u-fontSize-small         { font-size: $small-font-size; }
+.u-fontSize-default       { font-size: $default-font-size; }
+.u-fontSize-big           { font-size: $big-font-size; }
+.u-fontSize-large         { font-size: $large-font-size; }
+.u-fontSize-enormous      { font-size: $enormous-font-size; }
+
+
+
+// 6. Line height
+
+.u-lineHeight-0_5x  { line-height: $baseline-grid*0.5 !important; }
+
+$line-heights-count: $baseline-grid-multiples;
+
+@for $i from 1 to $line-heights-count+1 {
+.u-lineHeight-#{$i}x  { line-height: $baseline-grid*$i !important; }
+}
+
+
+
+// 7. Vertical Align
+.u-verticalAlgin-sub     { vertical-align: sub; }
+.u-verticalAlgin-super   { vertical-align: super; }
+.u-verticalAlgin-bottom  { vertical-align: bottom; }
+.u-verticalAlgin-textBottom  { vertical-align: text-bottom; }
+.u-verticalAlgin-middle  { vertical-align: middle; }
+.u-verticalAlgin-textTop { vertical-align: text-top; }
+.u-verticalAlgin-top     { vertical-align: top; }

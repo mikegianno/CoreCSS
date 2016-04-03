@@ -1,0 +1,69 @@
+//
+//  State classes
+//  ----------------------------------
+//  Classes in here are mostly referring to interaction with element and state changes.
+//  Please try to keep ALL state classes in here as a reference to future development.
+//  Use this file to avoid duplicating state namespaces and streamline any devs working
+//  on your markup/css
+//
+//  Contents
+//
+//  1. Active element state classes
+//  2. Visibility states
+//    2.1. Responsive visibility states
+
+
+
+// 1. Active element state classes
+
+.is-active {} // simulates :active pseudo class and state of buttons, means clicked
+
+.is-focus {}
+
+.is-selected {}
+
+.is-disabled {}
+
+
+
+// 2. Visibility states
+
+.is-hidden { display: none !important; }
+
+// 2.1. Responsive visibility states
+
+.is-hidden-\@\>lg    {
+  @media (min-width: $large-screen) {
+    display: none !important;
+  }
+}
+
+.is-hidden-\@\<lg    {
+  @media (max-width: $large-screen) {
+    display: none !important;
+  }
+}
+
+.is-hidden-\@\>md    {
+  @media (min-width: $medium-screen) {
+    display: none !important;
+  }
+}
+
+.is-hidden-\@\<md    {
+  @media (max-width: $medium-screen) {
+    display: none !important;
+  }
+}
+
+.is-hidden-\@\>sm    {
+  @media (min-width: $small-screen) {
+    display: none !important;
+  }
+}
+
+.is-hidden-\@\<sm    {
+  @media (max-width: $small-screen) {
+    display: none !important;
+  }
+}

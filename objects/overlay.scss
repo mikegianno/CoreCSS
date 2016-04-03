@@ -1,0 +1,25 @@
+//
+//
+// Overlays and takeovers
+// ------------------------------------
+//
+// Overlay object
+// please keep abstract
+//
+//  Contents
+//  1. Basic overlay object
+//
+//
+
+
+
+// 1. Basic overlay object
+
+.o-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: $zindexTop;
+}

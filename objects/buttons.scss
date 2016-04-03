@@ -35,7 +35,7 @@
 
     &:focus,
     &.is-focus {
-      border-color: $focus-border-color;
+      border-color: $focus-button-color;
       outline: 1px dotted $muted-color;
     }
 
@@ -60,7 +60,7 @@
 
     &:focus,
     &.is-focus {
-      background-color: $focus-cta-border-color;
+      background-color: $focus-cta-button-color;
       outline: 1px dotted $muted-color;
     }
 

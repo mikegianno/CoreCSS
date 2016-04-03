@@ -39,3 +39,14 @@ Contains single css rule styles only!
 ### objects
 
 Set of abstract objects style and responsive behavior.
+
+### components
+
+Placeholder folder to fill up with specific implementations/solutions of a UI problem found in more
+than one pages. Examples, modals, carousels, navigation lists
+
+### views
+
+Placeholder folder to fill up with UIs referring to very specific views and pages. That is, if you
+have a specific page that needs some specific solution you should be adding it in here. A good rule you could set is to allow an element to be called a view if it's found less than X times in your markup, otherwise this element should be a component. I feel this X should be 2 or 3.
+*So if an  element is repeated more than 3 times in markup it should NOT be a view but a component.*
