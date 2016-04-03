@@ -22,9 +22,17 @@
     background-color: transparent;
   }
 
+  &--fullwidth {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
   &-default {
     @include interactive-element();
     @include block-item();
+    display: inline-block;
+    text-decoration: none;
     border: 1px solid $button-color;
     color: $button-color;
 
@@ -33,9 +41,13 @@
       @include button-disabled();
     }
 
+    &:hover,
+    &.is-hover {
+      border-color: $focus-button-color;
+    }
+
     &:focus,
     &.is-focus {
-      border-color: $focus-button-color;
       outline: 1px dotted $muted-color;
     }
 
@@ -43,13 +55,15 @@
     &.is-active {
       border-color: $clicked-button-color;
       color: $clicked-button-color;
-      background-color: rgba( $clicked-button-color, $low-transparent-percentage );
+      background-color: rgba( $clicked-button-color, $high-transparent-percentage );
     }
   }
 
   &-cta {
     @include interactive-element();
     @include block-item();
+    display: inline-block;
+    text-decoration: none;
     color: $cta-button-text-color;
     background-color: $cta-button-color;
 
@@ -58,9 +72,13 @@
       @include button-disabled();
     }
 
+    &:hover,
+    &.is-hover {
+      background-color: $focus-cta-button-color;
+    }
+
     &:focus,
     &.is-focus {
-      background-color: $focus-cta-button-color;
       outline: 1px dotted $muted-color;
     }
 
@@ -69,6 +87,35 @@
       background-color: $clicked-cta-button-color;
     }
 
+  }
+
+  &-invert {
+    @include interactive-element();
+    @include block-item();
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid $background-color;
+    color: $background-color;
+
+    &[disabled],
+    &.is-disabled {
+      @include button-disabled();
+    }
+
+    &:hover,
+    &.is-hover {
+      background-color: rgba( $background-color, $high-transparent-percentage*0.95 );
+    }
+
+    &:focus,
+    &.is-focus {
+      outline: 1px dotted $muted-color;
+    }
+
+    &:active,
+    &.is-active {
+      background-color: rgba( $background-color, $high-transparent-percentage );
+    }
   }
 
 }
