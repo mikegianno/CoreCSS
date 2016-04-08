@@ -17,20 +17,20 @@ $spacings-count: $baseline-grid-multiples;
 
 // 2.Margins
 
-.u-marginTop-none { margin-top: none !important; }
-.u-marginBottom-none { margin-bottom: none !important; }
+.u-marginTop-none { margin-top: 0 !important; }
+.u-marginBottom-none { margin-bottom: 0 !important; }
 .u-marginVertical-none {
-  margin-top: none !important;
-  margin-bottom: none !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-.u-marginLeft-none { margin-left: none !important; }
-.u-marginRight-none { margin-right: none !important; }
+.u-marginLeft-none { margin-left: 0 !important; }
+.u-marginRight-none { margin-right: 0 !important; }
 .u-marginHorizontal-none {
-  margin-left: none !important;
-  margin-right: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
-.u-margin-none { margin: none !important; }
+.u-margin-none { margin: 0 !important; }
 
 .u-marginLeft-auto  { margin-left: auto !important; }
 .u-marginRight-auto { margin-right: auto !important; }
@@ -73,20 +73,20 @@ $spacings-count: $baseline-grid-multiples;
 
 // 3.Paddings
 
-.u-paddingTop-none { padding-top: none !important; }
-.u-paddingBottom-none { padding-bottom: none !important; }
+.u-paddingTop-none { padding-top: 0 !important; }
+.u-paddingBottom-none { padding-bottom: 0 !important; }
 .u-paddingVertical-none {
-  padding-top: none !important;
-  padding-bottom: none !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-.u-paddingLeft-none { padding-left: none !important; }
-.u-paddingRight-none { padding-right: none !important; }
+.u-paddingLeft-none { padding-left: 0 !important; }
+.u-paddingRight-none { padding-right: 0 !important; }
 .u-paddingHorizontal-none {
-  padding-left: none !important;
-  padding-right: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
-.u-padding-none { padding: none !important; }
+.u-padding-none { padding: 0 !important; }
 
 .u-paddingTop-0_5x { padding-top: $baseline-grid*0.5 !important; }
 .u-paddingBottom-0_5x { padding-bottom: $baseline-grid*0.5 !important; }

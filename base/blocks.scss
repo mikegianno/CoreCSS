@@ -6,8 +6,8 @@
 
 // interactive-element should be used in text-inputs, buttons, custom dropdown containers etc.
 @mixin interactive-element($border-width: 0) {
-  height: $baseline-grid;
-  line-height: $baseline-grid*1 - $border-width*2;
+  height: $baseline-grid*2;
+  line-height: $baseline-grid*2 - $border-width*2;
   font-size: $default-font-size;
   padding-left: $baseline-grid*0.5;
   padding-right: $baseline-grid*0.5;
